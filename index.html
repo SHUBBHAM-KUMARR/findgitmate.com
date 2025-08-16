@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.svg">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <title>findgitmate</title>
+</head>
+
+<body class="bg-blue-100 min-h-screen flex flex-col">
+  
+  <!-- HEADER -->
+  <header class="w-full h-28 bg-blue-700 grid grid-rows-2 place-items-center justify-items-start fixed top-0 z-10">
+    <div id="rowfst" class="">
+      <div id="logo" class="mx-4">
+        <span class="text-2xl tracking-wider text-yellow-400 font-semibold">
+          gitMate
+        </span>
+      </div>
+    </div>
+    <div id="row-second" class="place-self-center row-2 col-1">
+      <input type="text" id="search" name="search" class="bg-blue-200 p-2 pl-6 rounded-3xl rounded-r-none outline-none border-none">
+      <button id="btn" type="button" class="bg-blue-200 p-2 rounded-3xl rounded-l-none border-none">
+        <i class="fas fa-magnifying-glass fa-xl" style="color: #042893ff;"></i>
+      </button>
+    </div>
+    <button id="clear" type="button" class="row-2 col-2 place-self-center"><i class="fas fa-trash fa-fw fa-xl  " style="color: #ffffff;" onmouseover="style='color:red'" onmouseleave="style='color:white'"></i></button>
+  </header>
+
+  <!-- MAIN -->
+  <main class="grid grid-row-content sm:col-3 h-fit bg-blue-300 m-6 rounded-md mt-28 flex-grow">
+    <div class="bg-blue-400 border-none rounded-lg m-6 col-1 cards remove-btn">
+      <!-- Cards will be inserted here -->
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="h-fit bg-black w-full text-white p-4">
+    <div id="site-map">
+      <ul>
+        <li>Home</li>
+        <li>Connections</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./search.js"></script>
+</body>
+</html>
