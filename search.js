@@ -39,7 +39,7 @@ async function fetchAndDisplayUser() {
 
     const cardHTML = `
       <div  id="card" class="card grid border border-gray-300 rounded-lg text-white m-2 p-2 bg-blue-500">
-        <img class="h-[100px] w-[100px] place-self-start col-1 rounded-full p-3" src="${data.avatar_url}" />
+        <img class="h-[100px] w-[100px] place-self-start col-1 rounded-full p-3" src="${data.avatar_url}" alt="github avatar of ${data.login}"/>
         <div class="col-2 row-1 tracking-wide">
           <p>${data.name || 'No Name'}</p>
           <p>${data.bio || 'No bio available'}</p>
